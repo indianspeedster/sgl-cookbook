@@ -4,6 +4,8 @@
 
 GLM-4.6V series model includes two versions: GLM-4.6V (106B), a foundation model designed for cloud and high-performance cluster scenarios, and GLM-4.6V-Flash (9B), a lightweight model optimized for local deployment and low-latency applications. GLM-4.6V scales its context window to 128k tokens in training, and achieves SoTA performance in visual understanding among models of similar parameter scales. Crucially, GLM team integrated native Function Calling capabilities for the first time. This effectively bridges the gap between "visual perception" and "executable action" providing a unified technical foundation for multimodal agents in real-world business scenarios.
 
+**Hardware Support:** NVIDIA B200/H100/H200, AMD MI300X/MI325X/MI355X
+
 Beyond achieves SoTA performance across major multimodal benchmarks at comparable model scales. GLM-4.6V introduces several key features:
 
 - **Native Multimodal Function Calling** Enables native vision-driven tool use. Images, screenshots, and document pages can be passed directly as tool inputs without text conversion, while visual outputs (charts, search images, rendered pages) are interpreted and integrated into the reasoning chain. This closes the loop from perception to understanding to execution. Please refer to this [example](#tool-call-example).
